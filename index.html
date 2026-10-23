@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>work-mode-push · 工作模式推送</title>
+<meta name="description" content="工作模式推送 work-mode-push —— 由豆包办公创建的 GitHub Pages 项目站点。">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --ink: #1a1a2e;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eaf1ff;
+    --border: #e5e7eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    background: var(--card);
+    max-width: 560px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 32px rgba(17, 24, 39, 0.06);
+    padding: 2.5rem 2rem;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin: 1rem 0 0.5rem;
+    font-weight: 700;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .repo {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: border-color .2s, background .2s;
+  }
+  .repo:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .repo .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--accent); }
+  .foot {
+    margin-top: 1.25rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <span class="badge">GitHub Pages · 项目站点</span>
+    <h1>工作模式推送 <span style="color:var(--muted);font-weight:400;font-size:1.25rem">/ work-mode-push</span></h1>
+    <p class="sub">这是一个由豆包办公（工作模式）创建的简单落地页，托管于独立项目仓库，经由 GitHub Pages 自动发布。</p>
+    <a class="repo" href="https://github.com/javaochen/work-mode-push">
+      仓库地址：<span class="mono">github.com/javaochen/work-mode-push</span>
+    </a>
+    <p class="foot">创建于 2026-10-23 · Powered by GitHub Pages</p>
+  </main>
+</body>
+</html>
